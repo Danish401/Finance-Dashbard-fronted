@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Box, Typography, useTheme } from "@mui/material";
 import FlexBetween from "@/components/FlexBetween";
 import PixIcon from "@mui/icons-material/Pix";
 
-type Props = {};
-
-export const Navbar = (props: Props) => {
+export const Navbar = () => {
   const [selected, setSelected] = useState("dashboard");
   const theme = useTheme(); // Updated the useTheme call
   const { palette } = theme; // Destructure palette from theme
